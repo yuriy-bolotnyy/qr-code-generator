@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(230,226,235);
+    /* border: 1px dotted; */
+}
+
+.brdr {
+    border: 1px dotted;
+}
