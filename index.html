@@ -38,13 +38,26 @@
                   Put your text here and QR code will be generated for you :)
                 </p> -->
 
-                <a href="#" class="btn btn-primary"
-                  data-bs-toggle="tooltip" data-bs-placement="left"
-                  data-bs-custom-class="custom-tooltip"
-                  data-bs-title="Download your masterpiece"
-                >
-                  <i class="fa-solid fa-cloud-arrow-down"></i>
+                <!-- Download button -->
+                <a class="btn btn-primary" 
+                    role="button" 
+                    data-bs-toggle="tooltip" data-bs-placement="left"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Download your masterpiece"
+                  >  
+                  <i class="fa-solid fa-cloud-arrow-down"
+                    aria-expanded="false" aria-controls="collapseDownload"
+                    data-bs-toggle="collapse" 
+                    href="#collapseDownload" 
+                  ></i>
                 </a>
+                <!-- Collapse section for Download -->
+                <div class="collapse show" id="collapseDownload">
+                  <div class="card card-body">
+                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+
 
                 <a href="#" class="btn btn-primary"
                   data-bs-toggle="tooltip" data-bs-placement="bottom"
