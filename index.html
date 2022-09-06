@@ -77,7 +77,7 @@
                     data-bs-custom-class="custom-tooltip"
                     data-bs-title="Colorize your QR code"
                   >  
-                  <i class="fa-solid fa-palette fa-flip"
+                  <i class="fa-solid fa-palette fa-lg fa-flip"
                     style="--fa-animation-duration: 15s;"
                     aria-expanded="false" aria-controls="collapseColorize"
                     data-bs-toggle="collapse" 
@@ -86,20 +86,32 @@
                 </a>
                 <!-- Collapse section for Colorize -->
                 <!-- <div class="collapse show" id="collapseColorize"></div> -->
-                <div class="collapse" id="collapseColorize">
+                <div class="collapse show" id="collapseColorize">
                   <div class="card card-body">
-                    COLORIZE... 
-                    <div>
-                      <label for="colorpicker">Foreground:</label>
-                      <input type="color" id="colorpicker" value="#050DFF">
+                    Pick colors ...
+                  <div >
+                      <input style="width:100px;height:100px;" type="color" id="body" name="body"
+                              value="#EFFF08">
+                      <label for="body"></label>
+                      <input style="width:50px;height:50px;position: absolute; transform: translate(-165%, 50%);" 
+                        type="color" id="head" name="head"
+                              value="#050DFF">
+                        <label for="head"></label>
+                  </div>
 
-                      <label for="colorpicker">Background:</label>
-                      <input type="color" id="colorpicker" value="#EFFF08">
-                    </div>
                   </div>
                 </div>
 
 
+                <!-- Settings button -->
+                <a href="#" class="btn btn-info"
+                  data-bs-toggle="tooltip" data-bs-placement="bottom"
+                  data-bs-custom-class="custom-tooltip"
+                  data-bs-title="Customize your QR code"
+                >
+                  <i class="fa-solid fa-cog fa-lg fa-spin" style="--fa-animation-duration: 15s;"></i>
+                </a>
+
 
                 <!-- Print button -->
                 <a href="#" class="btn btn-info"
@@ -107,25 +119,10 @@
                   data-bs-custom-class="custom-tooltip"
                   data-bs-title="Print your QR code"
                 >
-                  <i class="fa-solid fa-print"></i>
+                  <i class="fa-solid fa-print fa-lg"></i>
                 </a>
 
-                <!-- Print button -->
-                <a href="#" class="btn btn-info"
-                  data-bs-toggle="tooltip" data-bs-placement="right"
-                  data-bs-custom-class="custom-tooltip"
-                  data-bs-title="Print your QR code"
-                >
-                  <i class="fa-solid fa-cog fa-spin" style="--fa-animation-duration: 15s;"></i>
-                </a>
-
-                <!-- <a href="#" class="btn btn-primary">
-                  <i class="fa-solid fa-magnifying-glass-plus"></i>
-                </a>
-
-                <a href="#" class="btn btn-primary">
-                  <i class="fa-solid fa-ruler-combined"></i>
-                </a> -->
+              
               </div>
               <!-- <div class="card-footer text-muted">
                 2 days ago
