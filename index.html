@@ -53,14 +53,24 @@
                 <!-- Collapse section for Download -->
                 <div class="collapse" id="collapseDownload">
                   <div class="card card-body">
-                    DOWNLOAD.... Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    Download QR Code as ... 
+                    <div>
+                      <button type="button" class="btn btn-primary">PNG</button>
+                      <button type="button" class="btn btn-primary">JPEG</button>
+                      <button type="button" class="btn btn-primary">SVG</button>
+                    </div>
+                    <div>
+                      <label for="QRcodeSize" class="form-label">Size</label>
+                      <input type="range" class="form-range" min="100" max="1000" step="100" id="QRcodeSize">
+                    </div>
+                    
                   </div>
                 </div>
 
 
 
                 <!-- Colorize button -->
-                <a class="btn btn-primary" 
+                <a class="btn btn-success" 
                     role="button" 
                     data-bs-toggle="tooltip" data-bs-placement="bottom"
                     data-bs-custom-class="custom-tooltip"
@@ -76,14 +86,21 @@
                 <!-- <div class="collapse show" id="collapseColorize"></div> -->
                 <div class="collapse" id="collapseColorize">
                   <div class="card card-body">
-                    COLORIZE... Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    COLORIZE... 
+                    <div>
+                      <label for="colorpicker">Foreground:</label>
+                      <input type="color" id="colorpicker" value="#050DFF">
+
+                      <label for="colorpicker">Background:</label>
+                      <input type="color" id="colorpicker" value="#EFFF08">
+                    </div>
                   </div>
                 </div>
 
 
 
                 <!-- Print button -->
-                <a href="#" class="btn btn-primary"
+                <a href="#" class="btn btn-info"
                   data-bs-toggle="tooltip" data-bs-placement="right"
                   data-bs-custom-class="custom-tooltip"
                   data-bs-title="Print your QR code"
