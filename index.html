@@ -23,7 +23,6 @@
 
 
 
-          
           <div class="collapse show" id="collapseExample">
             <div class="card text-center">
               <img src="/img/qr_hello_world_1000x1000_L_yellow-on-blue.png" class="img-fluid img-thumbnail" alt="...">
@@ -52,20 +51,37 @@
                   ></i>
                 </a>
                 <!-- Collapse section for Download -->
-                <div class="collapse show" id="collapseDownload">
+                <div class="collapse" id="collapseDownload">
                   <div class="card card-body">
-                    Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                    DOWNLOAD.... Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
                   </div>
                 </div>
 
 
-                <a href="#" class="btn btn-primary"
-                  data-bs-toggle="tooltip" data-bs-placement="bottom"
-                  data-bs-custom-class="custom-tooltip"
-                  data-bs-title="Colorize your QR code"
-                >
-                  <i class="fa-solid fa-palette"></i>
+
+                <!-- Colorize button -->
+                <a class="btn btn-primary" 
+                    role="button" 
+                    data-bs-toggle="tooltip" data-bs-placement="bottom"
+                    data-bs-custom-class="custom-tooltip"
+                    data-bs-title="Colorize your QR code"
+                  >  
+                  <i class="fa-solid fa-palette"
+                    aria-expanded="false" aria-controls="collapseColorize"
+                    data-bs-toggle="collapse" 
+                    href="#collapseColorize" 
+                  ></i>
                 </a>
+                <!-- Collapse section for Colorize -->
+                <!-- <div class="collapse show" id="collapseColorize"></div> -->
+                <div class="collapse" id="collapseColorize">
+                  <div class="card card-body">
+                    COLORIZE... Some placeholder content for the collapse component. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                  </div>
+                </div>
+
+
+
 
                 <a href="#" class="btn btn-primary"
                   data-bs-toggle="tooltip" data-bs-placement="right"
