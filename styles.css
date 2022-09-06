@@ -6,3 +6,14 @@ body {
 .brdr {
     border: 1px dotted;
 }
+
+.vcenter {
+    height: 375px;
+    line-height: 300px;
+    vertical-align: middle;
+}
+
+/* .vcenter input, .vcenter span{
+    display: inline-block;
+    vertical-align: middle;
+} */
