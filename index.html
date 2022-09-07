@@ -98,15 +98,39 @@
                 <!-- Collapse section for Customize -->
                 <div class="collapse" id="collapseDownload">
                   <div class="card card-body">
-                    Download QR Code as ... 
+
                     <div>
-                      <button type="button" class="btn btn-primary">PNG</button>
-                      <button type="button" class="btn btn-primary">JPEG</button>
-                      <button type="button" class="btn btn-primary">SVG</button>
-                    </div>
-                    <div>
-                      <label for="QRcodeSize" class="form-label">Size</label>
-                      <input type="range" class="form-range" min="100" max="1000" step="100" id="QRcodeSize">
+                      <!-- Default dropstart button -->
+                      <div class="btn-group dropstart">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Format
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">JPEG</a></li>
+                          <li><a class="dropdown-item active" href="#">PNG</a></li>
+                          <li><a class="dropdown-item" href="#">SVG</a></li>
+                        </ul>
+                      </div>
+
+                      <!-- Default dropend button -->
+                      <div class="btn-group dropend">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+                          Size
+                        </button>
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="#">100x100</a></li>
+                          <li><a class="dropdown-item" href="#">200x200</a></li>
+                          <li><a class="dropdown-item" href="#">300x300</a></li>
+                          <li><a class="dropdown-item" href="#">400x400</a></li>
+                          <li><a class="dropdown-item" href="#">500x500</a></li>
+                          <li><a class="dropdown-item active" href="#">600x600</a></li>
+                          <li><a class="dropdown-item" href="#">700x700</a></li>
+                          <li><a class="dropdown-item" href="#">800x800</a></li>
+                          <li><a class="dropdown-item" href="#">900x900</a></li>
+                          <li><a class="dropdown-item" href="#">1000x1000</a></li>
+
+                        </ul>
+                      </div>
                     </div>
                     
                   </div>
